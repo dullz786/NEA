@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DULLZ NAVBAR</title>
+    <link rel="stylesheet"  type="text/css" href='{{ url_for('static', filename='dullzbase.css') }}'>
+    <link rel="stylesheet" type="text/css" href='{{ url_for('static', filename='dullzhomepage.css') }}'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d60ff5ed18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper"></div>
+            <header>
+                <a href='#' class="logo">ReviseBio</a>
+                <div class="menu-toggle">
+                </div>
+                <nav id="myNavbar">
+                    <ul>
+                     <li><a href="#" class="active">Home</a></li>
+                     <li><a href="dashboard/">Dashboard</a></li>
+                     <li><a href="leaderboard">Leaderboard</a></li>
+                     <li><a href="revise/">Revise</a></li>
+                     <li><a href="statistics/">Statistics</a></li>
+                     <li><a href="tasks/">Tasks</a></li> 
+                     <li><a href="register/">Sign Up</a></li> 
+                    </ul>
+
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </nav>
+        
+
+
+
+
+
+                <div class="clearfix"></div>
+            </header>
+    
+            <div class="content">
+                <h1> BEGIN REVISING BIOLOGY</h1>
+                <p> Sign in or Register,  to continue your revision. </p>
+
+                <div>
+                    <a href="/login/">
+                        <button type="button" class="homebutton"><span class = "homespan"></span>SIGN IN</button>
+                    </a>
+
+                    <a href="/register/">
+                        <button type="button" class="homebutton"><span class = "homespan"></span>REGISTER</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    
+     
+    </div>
+    
+    
+    
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='hamburger.js') }}"></script>
+
+
+    
+</body>
+
+</html>
